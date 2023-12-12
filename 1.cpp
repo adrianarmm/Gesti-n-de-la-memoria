@@ -25,7 +25,7 @@ int main() {
         munmap(shared_memory, SIZE);
         exit(EXIT_SUCCESS);
     } else {
-        strcpy(shared_memory, "Hello, child process!");
+        strcpy(shared_memory, "Hola, quieres tarta de queso?");
         wait(NULL);
         munmap(shared_memory, SIZE);
     }
